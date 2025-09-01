@@ -8,12 +8,36 @@
         #student_table {
             width:100%;
             height: 200px;
+            text-align: center;
         }
 
         #student_table, th, td {
             border: 1px solid black;
             border-collapse: collapse; 
         }
+
+        #spanning-table {
+            width:100%;
+            height: 200px;
+            text-align: center;
+        }
+
+        #spanning-table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; 
+        }
+        
+        #exercise-table {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+        }
+
+        #exercise-table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
     </style>    
 </head>
 <body>
@@ -26,7 +50,7 @@
         </tr>
 
         <tr>
-            <td>111</td>
+            <td colspan="2">111</td>
             <td>Tashi</td>
             <td>17878237</td>
         </tr>
@@ -43,6 +67,48 @@
             <td>17683872</td>
         </tr>
 
-   </table> 
+   </table>
+   
+   
+   <div>
+    <br>
+        <table border="1" id="spanning-table">
+            <tr>
+                <th>H1</th>
+                <th>H2</th>
+                <th>H3</th>
+            </tr>
+
+            <tr>
+                <td>A</td>
+                <td colspan="2" rowspan="2">B</td>
+                
+            </tr>
+
+            <tr>
+                <td>D</td>
+            </tr> 
+
+        </table>
+    </br>
+
+        <table id="exercise-table">
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">C</td>
+                <td>D</td>
+                <td>E</td>
+            </tr>
+
+            <tr>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
